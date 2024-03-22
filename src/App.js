@@ -6,33 +6,46 @@ import PageWrapper from './components/PageWrapper';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
+import Team from './components/Common/Team';
+import Services from './components/Common/Services';
+import Portfolio from './components/Common/Portfolio';
 
 class App extends Component {
   render(){
     return (
       <Router>
         <PageWrapper>
-          <Home/>
-          <About/>
-          <Contact/>
           
           <Routes>
             <Route
               exact={true}
               path= "/"
-              component={<Home/>}
+              element={<Home/>}
             />
-
+            <Route
+              path="/services"
+              element={<Services/>}
+            />
+            <Route
+              path="/portfolio"
+              element={<Portfolio/>}
+            />
             <Route
               path="/about"
-              component={<About/>} 
+              element={<About/>} 
             />
             <Route
+              path="/team"
+              element={<Team/>}
+            />
+          
+            <Route
               path="/contact"
-              component={<Contact/>}
+              element={<Contact/>}
             />
           </Routes>
-
+          <About/>
+          <Contact/>
         </PageWrapper>
       </Router>
     );

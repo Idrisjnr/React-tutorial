@@ -4,7 +4,6 @@ import image from '../assets/img/header-bg.jpg';
 
 //Re-usable components
 import Services from "../Common/Services";
-import Portfolio from "../Common/Portfolio";
 
 class Home extends Component{
     render(){
@@ -14,13 +13,13 @@ class Home extends Component{
                     title="Welcome To Our Studio!"
                     subtitle="IT'S NICE TO MEET YOU"
                     buttonText="Tell me more"
-                    // link="/services"
+                     link="/services"
                     showButton={true}
                     image={image}
                 />
 
                   <Services/> 
-                  <Portfolio/>                
+                                
             </div>
         );
     }

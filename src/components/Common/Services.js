@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import SingleService from './SingleService';
+import Portfolio from './Portfolio';
 
 const services =[
     {title:'E-Commerce', description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.', icon: 'fa-shopping-cart'},
@@ -23,6 +24,7 @@ class Services extends Component{
                     })}
                 </div>
             </div>
+            <Portfolio/>
         </section>
         );
     }
